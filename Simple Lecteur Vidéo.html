@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <style>
 
 .header {
@@ -29,10 +28,6 @@
     width:425px;
 }
 
-.volumebar {
-
-}
-
 .fullscreenbtn {
     background: url(images/full-screen.jpeg);
     background-size: cover;
@@ -44,12 +39,12 @@
     width:650px;
 }
 
+//Prevents native controls being displayed in full screen mode
 ::-webkit-media-controls {
   display:none !important;
 }
 
 </style>
- 
 <script>
 function initPlayer() {
 video = document.querySelector(".video");
@@ -62,7 +57,6 @@ mutespeaker=document.querySelector(".mutespeakerbtn");
 progressbar=document.querySelector(".progressbar");
 volumebar=document.querySelector(".volumebar");
 fullscreen=document.querySelector(".fullscreenbtn");
-
 
 //Event Handling
 playpause.addEventListener("click", playPause); 
@@ -117,9 +111,7 @@ function fullScreen(){
     video.webkitRequestFullScreen();
   }
 }
- 
 window.addEventListener("load", initPlayer);
-
 </script>
 
 </head>
@@ -133,7 +125,5 @@ window.addEventListener("load", initPlayer);
 <button class="mutespeakerbtn"></button>
 <input class="volumebar" type="range" min="0" max="100" value="100" steps="1">
 <button class="fullscreenbtn"></button>
-
 </body>
-
 </html>
