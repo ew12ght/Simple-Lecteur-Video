@@ -1,0 +1,84 @@
+.header {
+    font-size: 50px;
+    background-color: #FFCC99;
+    width:650px;
+    border: 5px rgb(255,255,255);;
+}
+
+.playpausebtn {
+    background: url(images/pause.jpeg);
+    background-size: cover;
+    width:19px;
+    height:19px;
+}
+
+.mutespeakerbtn {
+    background: url(images/mute.jpeg);
+    background-size: cover;
+    width:19px;
+    height:19px;
+}
+
+.progressbar {
+    width:425px;
+}
+
+.fullscreenbtn {
+    background: url(images/full-screen.jpeg);
+    background-size: cover;
+    width:19px;
+    height:19px;
+}
+
+.video {
+    width:650px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #DCDCDC;
+    background-size: 0px;
+    height: 5px;
+}
+
+input[type='range']::-ms-fill-lower  {
+    background: #DCDCDC;
+    height: 5px;
+}
+
+input[type='range']::-ms-fill-upper  {
+    background: #DCDCDC;
+    height: 5px;
+}
+
+input[type='range']::-moz-range-track {
+    background: #DCDCDC;
+    height: 5px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: radial-gradient(#000, #000);
+    height:10px;
+    width:10px;
+    border-radius:100%;
+}
+
+input[type='range']::-moz-range-thumb {
+    background: radial-gradient(#000, #000);
+    height:10px;
+    width:10px;
+    border-radius:100%;
+}
+
+input[type='range']::-ms-thumb {
+    -webkit-appearance: none !important;
+    background: radial-gradient(#000, #000);
+    height:10px;
+    width:10px;
+    border-radius:100%;
+}
+
+::-webkit-media-controls {
+    display:none !important;
+}
