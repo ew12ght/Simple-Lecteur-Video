@@ -1,5 +1,5 @@
 function initPlayer() {
-video = document.querySelector(".video");
+video=document.querySelector(".video");
 video.loop=true;
 video.play();
 
@@ -23,17 +23,17 @@ function playPause() {
     if (video.paused) {
       video.play();
       playpause.style.background="url(images/pause.jpeg)";
-      playpause.style.backgroundSize = "cover";	
+      playpause.style.backgroundSize="cover";	
 }
     else { 
-    video.pause();
-    playpause.style.background="url(images/play.jpeg)";
-    playpause.style.backgroundSize = "cover";
+      video.pause();
+      playpause.style.background="url(images/play.jpeg)";
+      playpause.style.backgroundSize="cover";
 }
 }
 
 function vidSeek() {
-    var seektime = video.duration * (progressbar.value / 100);
+    var seektime=video.duration * (progressbar.value / 100);
     video.currentTime=seektime;
 }
 
@@ -43,19 +43,19 @@ function progUpdate() {
 }
 
 function volBar() {
-    video.volume = volumebar.value / 100;
+    video.volume=volumebar.value / 100;
 }
 
 function mute () {
     if(video.muted) {
       video.muted=false;
       mutespeaker.style.background="url(images/mute.jpeg)";
-      mutespeaker.style.backgroundSize = "cover";
+      mutespeaker.style.backgroundSize="cover";
 }
     else { 
       video.muted=true;
       mutespeaker.style.background="url(images/speaker.jpeg)";
-      mutespeaker.style.backgroundSize = "cover";
+      mutespeaker.style.backgroundSize="cover";
 	}
 }
 
