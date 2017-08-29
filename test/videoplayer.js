@@ -1,8 +1,8 @@
 var expect=require("chai").expect;
 var myvideo=require("../app/videoplayer");
 
-describe("Play Video", function() {
-  it("checks that the video is playing", function() {
+describe("Checks whether the video is playing on startup", function() {
+  it("expects the video to be playing", function() {
     var isPlaying = myvideo.initPlayer();
 
     expect(isPlaying).tobe(true);
